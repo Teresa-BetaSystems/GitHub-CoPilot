@@ -28,7 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="participants-section">
             <strong>Participants (${details.participants.length}/${details.max_participants}):</strong>
             <ul>
+
               ${details.participants.map(participant => `<li><span class="participant-name">${participant}</span><button class="delete-participant" data-activity="${name}" data-email="${participant}" title="Remove participant">✕</button></li>`).join('')}
+
             </ul>
           </div>
         `;
